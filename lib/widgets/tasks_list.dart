@@ -22,6 +22,7 @@ class _TaskListState extends State<TaskList> {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
+        itemCount: tasks.length,
         itemBuilder: (context,index){
           return TaskTile(
             taskTitle:  tasks[index].name,

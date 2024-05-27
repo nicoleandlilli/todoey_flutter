@@ -32,6 +32,13 @@ class _TaskListState extends State<TaskList> {
                 widget.tasks[index].toggleDone();
               });
             },
+
+            longPressCallback: (){
+              setState(() {
+                widget.tasks.removeAt(index);
+              });
+
+            },
           );
         }
     );
